@@ -107,3 +107,7 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode,swift,cocoapods
+
+# additional stuff
+OpenAI\ chat-dalle/envs.swift
+envs.swift
