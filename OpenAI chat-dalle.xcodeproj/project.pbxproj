@@ -13,7 +13,7 @@
 		2917755329B60B2100EEC302 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2917755229B60B2100EEC302 /* ChatGPTSwift */; };
 		29646507299F7E12005146FD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29646506299F7E12005146FD /* Message.swift */; };
 		2981BF12299256BB00D40C7A /* OpenAI_chat_dalleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */; };
-		2981BF14299256BB00D40C7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF13299256BB00D40C7A /* ContentView.swift */; };
+		2981BF14299256BB00D40C7A /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF13299256BB00D40C7A /* ContentView2.swift */; };
 		2981BF16299256BE00D40C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2981BF15299256BE00D40C7A /* Assets.xcassets */; };
 		2981BF19299256BE00D40C7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2981BF18299256BE00D40C7A /* Preview Assets.xcassets */; };
 		2981BF212992578800D40C7A /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2981BF202992578800D40C7A /* OpenAIKit */; };
@@ -23,6 +23,10 @@
 		2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF342992964000D40C7A /* DalleViewModel.swift */; };
 		29CCEE1C29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */; };
 		41FB3BAB29EB393E008F5C46 /* envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BAA29EB393E008F5C46 /* envs.swift */; };
+		41FB3BB029EB4F59008F5C46 /* MyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */; };
+		41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB229EB4FA8008F5C46 /* GameManager.swift */; };
+		41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */; };
+		41FB3BB829EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB729EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +35,7 @@
 		29646506299F7E12005146FD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2981BF0E299256BB00D40C7A /* OpenAI chat-dalle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenAI chat-dalle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI_chat_dalleApp.swift; sourceTree = "<group>"; };
-		2981BF13299256BB00D40C7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2981BF13299256BB00D40C7A /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		2981BF15299256BE00D40C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2981BF18299256BE00D40C7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2981BF2A2992589300D40C7A /* DalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,11 @@
 		2981BF342992964000D40C7A /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
 		29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenAI-chat-dalle-Info.plist"; sourceTree = "<group>"; };
 		41FB3BAA29EB393E008F5C46 /* envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envs.swift; sourceTree = "<group>"; };
+		41FB3BAE29EB4F05008F5C46 /* OpenAI chat-dalle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OpenAI chat-dalle.entitlements"; sourceTree = "<group>"; };
+		41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentView.swift; sourceTree = "<group>"; };
+		41FB3BB229EB4FA8008F5C46 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameManager+GKMatchmakerDelegate.swift"; sourceTree = "<group>"; };
+		41FB3BB729EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameManager+GKMatchDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +93,12 @@
 		2981BF10299256BB00D40C7A /* OpenAI chat-dalle */ = {
 			isa = PBXGroup;
 			children = (
-				29646505299F7E02005146FD /* Models */,
-				2981BF262992583C00D40C7A /* ViewModels */,
-				2981BF252992581600D40C7A /* Views */,
+				41FB3BAE29EB4F05008F5C46 /* OpenAI chat-dalle.entitlements */,
+				41FB3BB129EB4F8C008F5C46 /* ViewModel */,
 				2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */,
-				41FB3BAA29EB393E008F5C46 /* envs.swift */,
-				2981BF13299256BB00D40C7A /* ContentView.swift */,
+				41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */,
 				2981BF15299256BE00D40C7A /* Assets.xcassets */,
+				41FB3BAD29EB3B94008F5C46 /* Archived */,
 				2981BF17299256BE00D40C7A /* Preview Content */,
 			);
 			path = "OpenAI chat-dalle";
@@ -108,8 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2981BF272992584B00D40C7A /* Messages */,
-				2981BF2A2992589300D40C7A /* DalleView.swift */,
-				2917754F29B6083800EEC302 /* GPT3View.swift */,
+				41FB3BAC29EB3B79008F5C46 /* Old */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +137,45 @@
 				2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		41FB3BAC29EB3B79008F5C46 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				2981BF2A2992589300D40C7A /* DalleView.swift */,
+				2917754F29B6083800EEC302 /* GPT3View.swift */,
+			);
+			path = Old;
+			sourceTree = "<group>";
+		};
+		41FB3BAD29EB3B94008F5C46 /* Archived */ = {
+			isa = PBXGroup;
+			children = (
+				41FB3BAA29EB393E008F5C46 /* envs.swift */,
+				2981BF13299256BB00D40C7A /* ContentView2.swift */,
+				2981BF262992583C00D40C7A /* ViewModels */,
+				2981BF252992581600D40C7A /* Views */,
+				29646505299F7E02005146FD /* Models */,
+			);
+			path = Archived;
+			sourceTree = "<group>";
+		};
+		41FB3BB129EB4F8C008F5C46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41FB3BB629EB55B6008F5C46 /* Game */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41FB3BB629EB55B6008F5C46 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */,
+				41FB3BB229EB4FA8008F5C46 /* GameManager.swift */,
+				41FB3BB729EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,15 +259,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FB3BB829EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift in Sources */,
 				2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */,
+				41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */,
 				2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */,
+				41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */,
 				29646507299F7E12005146FD /* Message.swift in Sources */,
-				2981BF14299256BB00D40C7A /* ContentView.swift in Sources */,
+				2981BF14299256BB00D40C7A /* ContentView2.swift in Sources */,
 				2981BF12299256BB00D40C7A /* OpenAI_chat_dalleApp.swift in Sources */,
 				41FB3BAB29EB393E008F5C46 /* envs.swift in Sources */,
 				2917755029B6083800EEC302 /* GPT3View.swift in Sources */,
 				2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */,
 				2981BF2B2992589300D40C7A /* DalleView.swift in Sources */,
+				41FB3BB029EB4F59008F5C46 /* MyContentView.swift in Sources */,
 				2981BF2D299258D200D40C7A /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,10 +398,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OpenAI chat-dalle/OpenAI chat-dalle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenAI chat-dalle/Preview Content\"";
-				DEVELOPMENT_TEAM = TU72F4GFFV;
+				DEVELOPMENT_TEAM = WUB53WQQUT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenAI-chat-dalle-Info.plist";
@@ -367,7 +418,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mbabicz.OpenAI-chat-dalle2";
+				PRODUCT_BUNDLE_IDENTIFIER = MF.Lyceum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -380,10 +431,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OpenAI chat-dalle/OpenAI chat-dalle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OpenAI chat-dalle/Preview Content\"";
-				DEVELOPMENT_TEAM = TU72F4GFFV;
+				DEVELOPMENT_TEAM = WUB53WQQUT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "OpenAI-chat-dalle-Info.plist";
@@ -399,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mbabicz.OpenAI-chat-dalle2";
+				PRODUCT_BUNDLE_IDENTIFIER = MF.Lyceum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
