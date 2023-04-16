@@ -1,0 +1,20 @@
+
+//    // parse the response such that it starts from the first curly bracket and forgets the last three consecutive backtick
+//    func parseQuizResponse(_ response: String) -> Quiz {
+//        let start = response.firstIndex(of: "{")!
+//        var end = start
+//        if let backtickIdx = response.lastIndex(of: "`") - 3 {
+//            end = backtickIdx - 3
+//        } else {
+//            end = response.endIndex
+//        }
+//        let substring = response[start..<end]
+//        print(substring)
+//        return Quiz(question: "", A: "", B: "", C: "", D: "", answer: "")
+//    }
+
+    // retry 
+    // func retry() async {
+    //     let text = await getResponseSingle(prompt: "retry without any additional text except the json file.")
+    //     print(text)
+    // }
