@@ -10,6 +10,9 @@ class GPT3ViewModel: ObservableObject {
 
     let api = ChatGPTAPI(apiKey: apikey2) // creating an instance of the ChatGPTAPI class and setting the API key
     @Published var messages = [Message]() // initializing an empty array of Message objects as a Published property
+    @Published var sections = [String]() // initializing an empty array of strings as a Published property
+    @Published var syllabus = ""
+    @Published var quiz = Quiz(questions: [])
 
     // decode string into quiz
     func decodeQuiz(_ text: String) -> Quiz {
@@ -19,16 +22,33 @@ class GPT3ViewModel: ObservableObject {
         do {
             quiz = try JSONDecoder().decode(Quiz.self, from: jsonData)
         } catch {
-            print("Error decoding JSON: \(error)")
+            print("Error decoding JSON: \(error) for \(text)")
         }
         
         return quiz
+    }
+
+    // decode json string array into an array of strings
+    func decodeStringArray(_ text: String) -> [String] {
+        let jsonData = Data(text.utf8)
+        var array = [String]()
+
+        do {
+            array = try JSONDecoder().decode([String].self, from: jsonData)
+        } catch {
+            print("Error decoding JSON: \(error)")
+        }
+        
+        return array
     }
     
     // curriculum quiz
     func getCurriculumQuiz(on passage: String) async -> Quiz {
         let text = await getResponseSingle(prompt: curriculumPrompt(passage))
-        return decodeQuiz(text)
+        DispatchQueue.main.async { [self] in
+            self.quiz = self.decodeQuiz(text)
+        }
+        return quiz
     }
     
     // versus quiz
@@ -40,7 +60,21 @@ class GPT3ViewModel: ObservableObject {
     // syllabus
     func getDetailedSyllabusAsString(on topic: String) async -> String {
         let text = await getResponseSingle(prompt: syllabusPrompt(topic))
+        print("==============GOT SYLLABUS===============")
+        print(text)
+        DispatchQueue.main.async { [self] in
+            self.syllabus = text
+        }
         return text
+    }
+
+    // sections 
+    func getSections(on topic: String) async -> [String] {
+        let text = await getResponseSingle(prompt: sectionPrompt(topic))
+        DispatchQueue.main.async { [self] in
+            self.sections = self.decodeStringArray(text)
+        }
+        return sections
     }
 
     // getDetailedSyllabus(on topic: String) -> Syllabus // last priority
@@ -58,8 +92,8 @@ class GPT3ViewModel: ObservableObject {
             print("asking \(message)")
             let result = try await api.sendMessage(text: message) // using the ChatGPTAPI object to send a message to the API and return a stream of messages
             return result
-        } catch {
-            print("error")
+        } catch let error {
+            print("error \(error.localizedDescription) for prompt \(prompt)")
             
         }
         return "Error"

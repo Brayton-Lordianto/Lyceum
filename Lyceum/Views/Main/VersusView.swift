@@ -9,7 +9,46 @@ import SwiftUI
 
 struct VersusView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Versus")
+                .font(.system(size: 45, weight: .heavy, design: .default))
+                .themeColor()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.vertical, 20)
+            
+            
+            Spacer()
+            
+        
+            
+            
+            
+//            RoundedRectangle(cornerRadius: 25, style: .continuous)
+//                .frame(height: 250)
+//                .padding(.horizontal, 50)
+//                .themeColor()
+//                .overlay {
+//                    Text("Learn")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 30, weight: .bold, design: .default))
+//                }
+//
+//            Spacer()
+//                .frame(height: 50)
+//
+//
+//            RoundedRectangle(cornerRadius: 25, style: .continuous)
+//                .frame(height: 250)
+//                .padding(.horizontal, 50)
+//                .themeColor()
+//                .overlay {
+//                    Text("Versus")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 30, weight: .bold, design: .default))
+//                }
+            
+        }
+        .padding(.horizontal, 40)
     }
 }
 

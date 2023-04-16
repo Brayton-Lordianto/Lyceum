@@ -21,13 +21,13 @@ struct CurriculumView<Content: View>: View {
     
     @EnvironmentObject var controlModel: ViewControlModel
     
-    @State var syllabus = ""
+    @State var syllabus = "loading..."
     @State var doneLoading: Bool = false
     @State var progress: CGFloat = 0
     
     var body: some View {
         ZStack {
-            if doneLoading {
+            if true {
                 VStack {
                     Text(title)
                         .font(.system(size: 35, weight: .heavy, design: .default))
@@ -39,7 +39,7 @@ struct CurriculumView<Content: View>: View {
                         Text(syllabus)
                             .font(.system(size: 15, weight: .regular, design: .default))
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            //.padding(.vertical, 25)
+                        //.padding(.vertical, 25)
                             .padding(.bottom, 30)
                     }
                     
@@ -52,7 +52,7 @@ struct CurriculumView<Content: View>: View {
                             .overlay(
                                 RoundedRectangle(cornerRadius: 30)
                                     .stroke(Color(UIColor(named: "themeColor1")!), lineWidth: 3)
-                                    
+                                
                             )
                     }
                     .padding(.top, 8)
@@ -67,11 +67,11 @@ struct CurriculumView<Content: View>: View {
                                 .padding(15)
                             
                         })
-                        .cornerRadius(15)
-                        .background {
-                            LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
-                        }
-                        .clipShape(Capsule())
+                    .cornerRadius(15)
+                    .background {
+                        LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
+                    }
+                    .clipShape(Capsule())
                     
                 }
                 .padding(.horizontal, 40)
@@ -94,40 +94,12 @@ struct CurriculumView<Content: View>: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     }
                 }
-            }
-            else {
-                LoadingView(progress: $progress)
-                    .onAppear {
-                        Task {
-                            syllabus = await gpt.getDetailedSyllabusAsString(on: title)
-                            myQuiz = await gpt.getCurriculumQuiz(on: title)
-                            
-                        }
+                .onAppear {
+                    Task {
+                        syllabus = await gpt.getDetailedSyllabusAsString(on: title)
                     }
-            }
-        }
-        
-//        .onAppear {
-//
-//            DispatchQueue.main.as {
-//                withAnimation {
-//                    self.doneLoading = true
-//                }
-//            }
-//        }
-        .onChange(of: syllabus) { newValue in
-            
-            
-            self.progress = 0
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                withAnimation {
-                    self.doneLoading = true
                 }
             }
         }
-        
-        
-        
     }
 }
