@@ -33,7 +33,7 @@ struct QuizLayoutView: View {
     @State private var didTap : Bool = false
     
     @State private var didCheck : Bool = false
-    @State var selected : String
+    @State var selected : String = ""
     var nowQuiz = myQuiz.questions[0]
     
     @State var answers = [myQuiz.questions[0].A, myQuiz.questions[0].B, myQuiz.questions[0].C, myQuiz.questions[0].D]
