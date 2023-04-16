@@ -59,9 +59,6 @@ struct LearnView: View {
                 .frame(height: 50)
             
         }
-        .onAppear {
-            doneLoading = false
-        }
         .padding(.horizontal, 40)
         .onChange(of: gpt3.sections) { newValue in
             self.progress = 0
