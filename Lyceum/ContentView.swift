@@ -28,7 +28,7 @@ struct ContentView: View {
                        
                 }
                 VersusView().tabItem {
-                    Label("Versus", systemImage: "paintbrush")
+                    Label("Versus", systemImage: "gamecontroller.fill")
                        
                 }
                 ShopView().tabItem {

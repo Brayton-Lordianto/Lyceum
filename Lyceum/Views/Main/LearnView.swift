@@ -40,32 +40,6 @@ struct LearnView: View {
             Spacer()
                 .frame(height: 50)
             
-            
-            
-//            RoundedRectangle(cornerRadius: 25, style: .continuous)
-//                .frame(height: 250)
-//                .padding(.horizontal, 50)
-//                .themeColor()
-//                .overlay {
-//                    Text("Learn")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 30, weight: .bold, design: .default))
-//                }
-//
-//            Spacer()
-//                .frame(height: 50)
-//
-//
-//            RoundedRectangle(cornerRadius: 25, style: .continuous)
-//                .frame(height: 250)
-//                .padding(.horizontal, 50)
-//                .themeColor()
-//                .overlay {
-//                    Text("Versus")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 30, weight: .bold, design: .default))
-//                }
-            
         }
         .padding(.horizontal, 40)
         

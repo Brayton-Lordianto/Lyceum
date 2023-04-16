@@ -116,8 +116,6 @@ struct CurriculumView<Content: View>: View {
 //            }
 //        }
         .onChange(of: syllabus) { newValue in
-            
-            
             self.progress = 0
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
