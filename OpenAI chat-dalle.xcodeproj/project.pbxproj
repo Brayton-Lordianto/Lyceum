@@ -7,22 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917754A29B4963800EEC302 /* GPT3ViewModel.swift */; };
 		2917754E29B606EC00EEC302 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 2917754D29B606EC00EEC302 /* OpenAI */; };
-		2917755029B6083800EEC302 /* GPT3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917754F29B6083800EEC302 /* GPT3View.swift */; };
 		2917755329B60B2100EEC302 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2917755229B60B2100EEC302 /* ChatGPTSwift */; };
-		29646507299F7E12005146FD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29646506299F7E12005146FD /* Message.swift */; };
-		2981BF12299256BB00D40C7A /* OpenAI_chat_dalleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */; };
-		2981BF14299256BB00D40C7A /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF13299256BB00D40C7A /* ContentView2.swift */; };
 		2981BF16299256BE00D40C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2981BF15299256BE00D40C7A /* Assets.xcassets */; };
 		2981BF19299256BE00D40C7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2981BF18299256BE00D40C7A /* Preview Assets.xcassets */; };
 		2981BF212992578800D40C7A /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2981BF202992578800D40C7A /* OpenAIKit */; };
-		2981BF2B2992589300D40C7A /* DalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2A2992589300D40C7A /* DalleView.swift */; };
-		2981BF2D299258D200D40C7A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2C299258D200D40C7A /* MessageView.swift */; };
-		2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */; };
-		2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF342992964000D40C7A /* DalleViewModel.swift */; };
 		29CCEE1C29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */; };
-		4164B7F829EBAD3C00B3CEAB /* envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F729EBAD3C00B3CEAB /* envs.swift */; };
+		4155387129EC74740034FD57 /* ViewModels in Resources */ = {isa = PBXBuildFile; fileRef = 4155386B29EC74740034FD57 /* ViewModels */; };
+		4155387229EC74740034FD57 /* View2 in Resources */ = {isa = PBXBuildFile; fileRef = 4155386C29EC74740034FD57 /* View2 */; };
+		4155387329EC74740034FD57 /* Var in Resources */ = {isa = PBXBuildFile; fileRef = 4155386D29EC74740034FD57 /* Var */; };
+		4155387429EC74740034FD57 /* Modifier in Resources */ = {isa = PBXBuildFile; fileRef = 4155386E29EC74740034FD57 /* Modifier */; };
+		4155387529EC74740034FD57 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 4155386F29EC74740034FD57 /* Models */; };
+		4155387629EC74740034FD57 /* CurriculumModel in Resources */ = {isa = PBXBuildFile; fileRef = 4155387029EC74740034FD57 /* CurriculumModel */; };
+		4155387A29EC74E30034FD57 /* OpenAI_chat_dalleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155387929EC74E30034FD57 /* OpenAI_chat_dalleApp.swift */; };
+		4155388329EC75200034FD57 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155387D29EC75200034FD57 /* MessageView.swift */; };
+		4155388429EC75200034FD57 /* DalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155387C29EC75200034FD57 /* DalleView.swift */; };
+		4155388529EC75200034FD57 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155387B29EC751F0034FD57 /* ShopView.swift */; };
+		4155388629EC75200034FD57 /* GPT3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155388029EC75200034FD57 /* GPT3View.swift */; };
+		4155388729EC75200034FD57 /* MessageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155387E29EC75200034FD57 /* MessageIndicatorView.swift */; };
+		4155388829EC75200034FD57 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155387F29EC75200034FD57 /* LearnView.swift */; };
+		4155388929EC75200034FD57 /* VersusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155388129EC75200034FD57 /* VersusView.swift */; };
+		4155388A29EC75200034FD57 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4155388229EC75200034FD57 /* ContentView2.swift */; };
 		4164B7FA29EBB07B00B3CEAB /* GameManager+WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F929EBB07B00B3CEAB /* GameManager+WebSocketManager.swift */; };
 		4164B7FF29EBBC1600B3CEAB /* iPaymentButton in Frameworks */ = {isa = PBXBuildFile; productRef = 4164B7FE29EBBC1600B3CEAB /* iPaymentButton */; };
 		4164B80329EC4D1300B3CEAB /* ApplePayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B80229EC4D1300B3CEAB /* ApplePayManager.swift */; };
@@ -35,20 +40,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2917754A29B4963800EEC302 /* GPT3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3ViewModel.swift; sourceTree = "<group>"; };
-		2917754F29B6083800EEC302 /* GPT3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3View.swift; sourceTree = "<group>"; };
-		29646506299F7E12005146FD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2981BF0E299256BB00D40C7A /* OpenAI chat-dalle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenAI chat-dalle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI_chat_dalleApp.swift; sourceTree = "<group>"; };
-		2981BF13299256BB00D40C7A /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		2981BF15299256BE00D40C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2981BF18299256BE00D40C7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2981BF2A2992589300D40C7A /* DalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleView.swift; sourceTree = "<group>"; };
-		2981BF2C299258D200D40C7A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIndicatorView.swift; sourceTree = "<group>"; };
-		2981BF342992964000D40C7A /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
 		29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenAI-chat-dalle-Info.plist"; sourceTree = "<group>"; };
-		4164B7F729EBAD3C00B3CEAB /* envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envs.swift; sourceTree = "<group>"; };
+		4155386B29EC74740034FD57 /* ViewModels */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModels; sourceTree = "<group>"; };
+		4155386C29EC74740034FD57 /* View2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View2; sourceTree = "<group>"; };
+		4155386D29EC74740034FD57 /* Var */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Var; sourceTree = "<group>"; };
+		4155386E29EC74740034FD57 /* Modifier */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modifier; sourceTree = "<group>"; };
+		4155386F29EC74740034FD57 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		4155387029EC74740034FD57 /* CurriculumModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CurriculumModel; sourceTree = "<group>"; };
+		4155387929EC74E30034FD57 /* OpenAI_chat_dalleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI_chat_dalleApp.swift; sourceTree = "<group>"; };
+		4155387B29EC751F0034FD57 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		4155387C29EC75200034FD57 /* DalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleView.swift; sourceTree = "<group>"; };
+		4155387D29EC75200034FD57 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		4155387E29EC75200034FD57 /* MessageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIndicatorView.swift; sourceTree = "<group>"; };
+		4155387F29EC75200034FD57 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		4155388029EC75200034FD57 /* GPT3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3View.swift; sourceTree = "<group>"; };
+		4155388129EC75200034FD57 /* VersusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusView.swift; sourceTree = "<group>"; };
+		4155388229EC75200034FD57 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010ContentView2.swift"; sourceTree = "<group>"; };
 		4164B7F929EBB07B00B3CEAB /* GameManager+WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameManager+WebSocketManager.swift"; sourceTree = "<group>"; };
 		4164B80229EC4D1300B3CEAB /* ApplePayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayManager.swift; sourceTree = "<group>"; };
 		4164B80429EC4F9E00B3CEAB /* ApplePayManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayManager2.swift; sourceTree = "<group>"; };
@@ -76,14 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29646505299F7E02005146FD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				29646506299F7E12005146FD /* Message.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		2981BF05299256BB00D40C7A = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +108,27 @@
 			isa = PBXGroup;
 			children = (
 				41FB3BAE29EB4F05008F5C46 /* OpenAI chat-dalle.entitlements */,
+				4164B80229EC4D1300B3CEAB /* ApplePayManager.swift */,
+				4164B80429EC4F9E00B3CEAB /* ApplePayManager2.swift */,
 				41FB3BB929EB7ABE008F5C46 /* View */,
 				41FB3BB129EB4F8C008F5C46 /* ViewModel */,
-				2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */,
+				4155387029EC74740034FD57 /* CurriculumModel */,
+				4155386F29EC74740034FD57 /* Models */,
+				4155386E29EC74740034FD57 /* Modifier */,
+				4155386D29EC74740034FD57 /* Var */,
+				4155386B29EC74740034FD57 /* ViewModels */,
+				4155386C29EC74740034FD57 /* View2 */,
 				41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */,
+				4155387929EC74E30034FD57 /* OpenAI_chat_dalleApp.swift */,
+				4155388229EC75200034FD57 /* ContentView2.swift */,
+				4155387F29EC75200034FD57 /* LearnView.swift */,
+				4155387B29EC751F0034FD57 /* ShopView.swift */,
+				4155388129EC75200034FD57 /* VersusView.swift */,
+				4155387E29EC75200034FD57 /* MessageIndicatorView.swift */,
+				4155387D29EC75200034FD57 /* MessageView.swift */,
+				4155387C29EC75200034FD57 /* DalleView.swift */,
+				4155388029EC75200034FD57 /* GPT3View.swift */,
 				2981BF15299256BE00D40C7A /* Assets.xcassets */,
-				41FB3BAD29EB3B94008F5C46 /* Archived */,
 				2981BF17299256BE00D40C7A /* Preview Content */,
 			);
 			path = "OpenAI chat-dalle";
@@ -123,56 +140,6 @@
 				2981BF18299256BE00D40C7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		2981BF252992581600D40C7A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2981BF272992584B00D40C7A /* Messages */,
-				41FB3BAC29EB3B79008F5C46 /* Old */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		2981BF262992583C00D40C7A /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				2981BF342992964000D40C7A /* DalleViewModel.swift */,
-				2917754A29B4963800EEC302 /* GPT3ViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		2981BF272992584B00D40C7A /* Messages */ = {
-			isa = PBXGroup;
-			children = (
-				2981BF2C299258D200D40C7A /* MessageView.swift */,
-				2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */,
-			);
-			path = Messages;
-			sourceTree = "<group>";
-		};
-		41FB3BAC29EB3B79008F5C46 /* Old */ = {
-			isa = PBXGroup;
-			children = (
-				2981BF2A2992589300D40C7A /* DalleView.swift */,
-				2917754F29B6083800EEC302 /* GPT3View.swift */,
-			);
-			path = Old;
-			sourceTree = "<group>";
-		};
-		41FB3BAD29EB3B94008F5C46 /* Archived */ = {
-			isa = PBXGroup;
-			children = (
-				4164B80229EC4D1300B3CEAB /* ApplePayManager.swift */,
-				4164B80429EC4F9E00B3CEAB /* ApplePayManager2.swift */,
-				2981BF13299256BB00D40C7A /* ContentView2.swift */,
-				4164B7F729EBAD3C00B3CEAB /* envs.swift */,
-				2981BF262992583C00D40C7A /* ViewModels */,
-				2981BF252992581600D40C7A /* Views */,
-				29646505299F7E02005146FD /* Models */,
-			);
-			path = Archived;
 			sourceTree = "<group>";
 		};
 		41FB3BB129EB4F8C008F5C46 /* ViewModel */ = {
@@ -272,9 +239,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4155387329EC74740034FD57 /* Var in Resources */,
 				29CCEE1C29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist in Resources */,
+				4155387529EC74740034FD57 /* Models in Resources */,
+				4155387429EC74740034FD57 /* Modifier in Resources */,
+				4155387129EC74740034FD57 /* ViewModels in Resources */,
 				2981BF19299256BE00D40C7A /* Preview Assets.xcassets in Resources */,
 				2981BF16299256BE00D40C7A /* Assets.xcassets in Resources */,
+				4155387229EC74740034FD57 /* View2 in Resources */,
+				4155387629EC74740034FD57 /* CurriculumModel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,23 +259,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				41FB3BB829EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift in Sources */,
-				2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */,
+				4155388629EC75200034FD57 /* GPT3View.swift in Sources */,
 				41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */,
-				2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */,
 				4164B80529EC4F9E00B3CEAB /* ApplePayManager2.swift in Sources */,
 				41FB3BBB29EB7ACA008F5C46 /* GameView.swift in Sources */,
-				4164B7F829EBAD3C00B3CEAB /* envs.swift in Sources */,
+				4155388329EC75200034FD57 /* MessageView.swift in Sources */,
+				4155387A29EC74E30034FD57 /* OpenAI_chat_dalleApp.swift in Sources */,
+				4155388529EC75200034FD57 /* ShopView.swift in Sources */,
+				4155388729EC75200034FD57 /* MessageIndicatorView.swift in Sources */,
 				41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */,
-				29646507299F7E12005146FD /* Message.swift in Sources */,
-				2981BF14299256BB00D40C7A /* ContentView2.swift in Sources */,
-				2981BF12299256BB00D40C7A /* OpenAI_chat_dalleApp.swift in Sources */,
-				2917755029B6083800EEC302 /* GPT3View.swift in Sources */,
+				4155388829EC75200034FD57 /* LearnView.swift in Sources */,
 				4164B7FA29EBB07B00B3CEAB /* GameManager+WebSocketManager.swift in Sources */,
-				2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */,
+				4155388A29EC75200034FD57 /* ContentView2.swift in Sources */,
+				4155388429EC75200034FD57 /* DalleView.swift in Sources */,
 				4164B80329EC4D1300B3CEAB /* ApplePayManager.swift in Sources */,
-				2981BF2B2992589300D40C7A /* DalleView.swift in Sources */,
+				4155388929EC75200034FD57 /* VersusView.swift in Sources */,
 				41FB3BB029EB4F59008F5C46 /* MyContentView.swift in Sources */,
-				2981BF2D299258D200D40C7A /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

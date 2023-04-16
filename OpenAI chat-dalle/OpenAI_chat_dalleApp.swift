@@ -12,8 +12,8 @@ struct OpenAI_chat_dalleApp: App {
 
     var body: some Scene {
         WindowGroup {
+            ContentView2()
 
-            MyContentView()
         }
     }
 }
