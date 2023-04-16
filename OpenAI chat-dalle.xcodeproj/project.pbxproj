@@ -22,7 +22,8 @@
 		2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */; };
 		2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF342992964000D40C7A /* DalleViewModel.swift */; };
 		29CCEE1C29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */; };
-		41FB3BAB29EB393E008F5C46 /* envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BAA29EB393E008F5C46 /* envs.swift */; };
+		4164B7F829EBAD3C00B3CEAB /* envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F729EBAD3C00B3CEAB /* envs.swift */; };
+		4164B7FA29EBB07B00B3CEAB /* GameManager+WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F929EBB07B00B3CEAB /* GameManager+WebSocketManager.swift */; };
 		41FB3BB029EB4F59008F5C46 /* MyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */; };
 		41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB229EB4FA8008F5C46 /* GameManager.swift */; };
 		41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */; };
@@ -44,7 +45,8 @@
 		2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIndicatorView.swift; sourceTree = "<group>"; };
 		2981BF342992964000D40C7A /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
 		29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenAI-chat-dalle-Info.plist"; sourceTree = "<group>"; };
-		41FB3BAA29EB393E008F5C46 /* envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envs.swift; sourceTree = "<group>"; };
+		4164B7F729EBAD3C00B3CEAB /* envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envs.swift; sourceTree = "<group>"; };
+		4164B7F929EBB07B00B3CEAB /* GameManager+WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameManager+WebSocketManager.swift"; sourceTree = "<group>"; };
 		41FB3BAE29EB4F05008F5C46 /* OpenAI chat-dalle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OpenAI chat-dalle.entitlements"; sourceTree = "<group>"; };
 		41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentView.swift; sourceTree = "<group>"; };
 		41FB3BB229EB4FA8008F5C46 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
@@ -154,8 +156,8 @@
 		41FB3BAD29EB3B94008F5C46 /* Archived */ = {
 			isa = PBXGroup;
 			children = (
-				41FB3BAA29EB393E008F5C46 /* envs.swift */,
 				2981BF13299256BB00D40C7A /* ContentView2.swift */,
+				4164B7F729EBAD3C00B3CEAB /* envs.swift */,
 				2981BF262992583C00D40C7A /* ViewModels */,
 				2981BF252992581600D40C7A /* Views */,
 				29646505299F7E02005146FD /* Models */,
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */,
+				4164B7F929EBB07B00B3CEAB /* GameManager+WebSocketManager.swift */,
 				41FB3BB229EB4FA8008F5C46 /* GameManager.swift */,
 				41FB3BB729EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift */,
 			);
@@ -275,12 +278,13 @@
 				41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */,
 				2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */,
 				41FB3BBB29EB7ACA008F5C46 /* GameView.swift in Sources */,
+				4164B7F829EBAD3C00B3CEAB /* envs.swift in Sources */,
 				41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */,
 				29646507299F7E12005146FD /* Message.swift in Sources */,
 				2981BF14299256BB00D40C7A /* ContentView2.swift in Sources */,
 				2981BF12299256BB00D40C7A /* OpenAI_chat_dalleApp.swift in Sources */,
-				41FB3BAB29EB393E008F5C46 /* envs.swift in Sources */,
 				2917755029B6083800EEC302 /* GPT3View.swift in Sources */,
+				4164B7FA29EBB07B00B3CEAB /* GameManager+WebSocketManager.swift in Sources */,
 				2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */,
 				2981BF2B2992589300D40C7A /* DalleView.swift in Sources */,
 				41FB3BB029EB4F59008F5C46 /* MyContentView.swift in Sources */,

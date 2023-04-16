@@ -14,7 +14,8 @@ enum PlayerAuthState {
 }
 
 class GameManager: NSObject, ObservableObject {    
-
+    var webSocketTask: URLSessionWebSocketTask? = nil
+    
     @Published var inGame = false
     @Published var isGameOver = false
     @Published var authState = PlayerAuthState.authenticating
@@ -51,6 +52,10 @@ class GameManager: NSObject, ObservableObject {
             }
         }
     }
+    
+    deinit {
+        disconnect()
+    }
 
     func startMatching() {
         let request = GKMatchRequest()
@@ -72,9 +77,10 @@ class GameManager: NSObject, ObservableObject {
         otherPlayer = match?.players.first
         sendString("hi there")
         print("Starting game")
+        connect()
     }
     
     func answerQuestion() {
-        sendString("Answered")
+        send(score: 5)
     }
 }
