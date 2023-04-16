@@ -17,4 +17,12 @@ var show = false
 
 let apikey2 = ""
 
-var myQuiz = Quiz(questions: [QuizQuestion]())
+var myQuiz = Quiz(questions: [
+    QuizQuestion(question: "Which of the following is NOT a basic HTML tag?", A: "<html>", B: "<head>", C: "<body>", D: "<script>", answer: "D"),
+    QuizQuestion(question: "b", A: "a", B: "b", C: "c", D: "d", answer: "A"),
+    QuizQuestion(question: "c", A: "a", B: "b", C: "c", D: "d", answer: "B"),
+    QuizQuestion(question: "d", A: "a", B: "b", C: "c", D: "d", answer: "C"),
+])
+
+
+var tokens = 1323

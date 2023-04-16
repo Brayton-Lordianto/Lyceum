@@ -9,17 +9,39 @@ import SwiftUI
 
 struct QuizLayoutView: View {
     
-    let answers = ["<html>", "<head>", "<body>", "<script>"]
+    
     let correct = "<script>"
-    @State private var colors = [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor1")!)]
+    
+    // @State private var colors = [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor1")!)]
+    
+    func gradeToContent(letter: String) -> Int {
+        if letter == "A" {
+            return 0
+        }
+        else if letter == "B" {
+            return 1
+        }
+        else if letter == "C" {
+            return 2
+        }
+        else {
+            return 3
+        }
+    }
     
     
     @State private var didTap : Bool = false
+    
+    @State private var didCheck : Bool = false
     @State var selected : String
+    var nowQuiz = myQuiz.questions[0]
+    
+    @State var answers = [myQuiz.questions[0].A, myQuiz.questions[0].B, myQuiz.questions[0].C, myQuiz.questions[0].D]
     
     var body: some View {
+        
         VStack {
-            Text("Quiz: HTML")
+            Text("Quiz: \(chosenSection)")
                 .font(.system(size: 35, weight: .heavy, design: .default))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .themeColor()
@@ -29,115 +51,128 @@ struct QuizLayoutView: View {
                 .resizable()
                 .scaledToFit()
             
-            Text("Which of the following is NOT a basic HTML tag?")
+            Text("\(nowQuiz.question)")
                 .font(.system(size: 18, weight: .regular, design: .default))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.vertical, 20)
             
-            
-            
-            ForEach(0..<4, id: \.self) { index in
-                Button(action: {
-                    self.didTap = !self.didTap
-                    selected = answers[index]
-                    self.colors[index] = Color(.orange)
-
-
-                }) {
-                    Text(answers[index])
+            if didCheck == false {
+                ForEach(0..<4, id: \.self) { index in
+                    Button(action: {
+                        self.didTap = !self.didTap
+                        selected = answers[index]
+                    }) {
+                        if selected == answers[index] {
+                            Text(answers[index])
+                                .font(.system(size: 18, weight: .bold, design: .default))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(15)
+                            
+                            
+                                .cornerRadius(15)
+                                .background {
+                                    LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
+                                }
+                                .clipShape(Capsule())
+                        }
+                        else {
+                            Text(answers[index])
+                                .font(.system(size: 18, weight: .bold, design: .default))
+                                .themeColor()
+                                .frame(maxWidth: .infinity)
+                                .padding(15)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 30)
+                                        .stroke(Color(UIColor(named: "themeColor1")!), lineWidth: 3)
+                                    
+                                )
+                        }
+                        
+                    }
+                    .padding(.top, 8)
+                    
+                }
+                
+                Spacer()
+                
+                Button(action: {didCheck = true}) {
+                    Text("Check")
                         .font(.system(size: 18, weight: .bold, design: .default))
-                        .themeColor()
+                        .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding(15)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 30)
-                                .stroke(colors[index], lineWidth: 3)
-
-                        )
+                    
+                    
+                        .cornerRadius(15)
+                        .background {
+                            LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
+                        }
+                        .clipShape(Capsule())
                 }
-                .padding(.top, 8)
             }
-//            Button(action: {
-//                self.didTap = !self.didTap
-//                selected = answers[0]
-//
-//
-//            }) {
-//                Text(answers[0])
-//                    .font(.system(size: 18, weight: .bold, design: .default))
-//                    .themeColor()
-//                    .frame(maxWidth: .infinity)
-//                    .padding(15)
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 30)
-//                            .stroke(selected==answers[0] ? .orange : Color(UIColor(named: "themeColor1")!), lineWidth: 3)
-//
-//                    )
-//            }
-//            .padding(.top, 8)
-//
-//            Button(action: {
-//                self.didTap = !self.didTap
-//                selected = answers[1]
-//
-//
-//            }) {
-//                Text(answers[1])
-//                    .font(.system(size: 18, weight: .bold, design: .default))
-//                    .themeColor()
-//                    .frame(maxWidth: .infinity)
-//                    .padding(15)
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 30)
-//                            .stroke(selected==answers[1] ? .orange : Color(UIColor(named: "themeColor1")!), lineWidth: 3)
-//
-//                    )
-//            }
-//            .padding(.top, 8)
-//
-//
-//            Button(action: {
-//                self.didTap = true
-//                selected = answers[2]
-//
-//
-//            }) {
-//                Text(answers[2])
-//                    .font(.system(size: 18, weight: .bold, design: .default))
-//                    .themeColor()
-//                    .frame(maxWidth: .infinity)
-//                    .padding(15)
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 30)
-//                            .stroke(selected==answers[2] ? .orange : Color(UIColor(named: "themeColor1")!), lineWidth: 3)
-//
-//                    )
-//            }
-//            .padding(.top, 8)
-//
-//            Button(action: {
-//                self.didTap = !self.didTap
-//                selected = answers[3]
-//
-//
-//            }) {
-//                Text(answers[3])
-//                    .font(.system(size: 18, weight: .bold, design: .default))
-//                    .themeColor()
-//                    .frame(maxWidth: .infinity)
-//                    .padding(15)
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 30)
-//                            .stroke(selected==answers[3] ? .orange : Color(UIColor(named: "themeColor1")!), lineWidth: 3)
-//
-//                    )
-//            }
-//            .padding(.top, 8)
             
-            Spacer()
-           
+            //--after checking
+            else {
+                ScrollView(.vertical, showsIndicators: false) {
+                    Spacer().frame(height: 7)
+                    ForEach(0..<4, id: \.self) { index in
+                        
+//                        if selected == answers[index] {
+//                            Text(answers[index])
+//                                .font(.system(size: 18, weight: .bold, design: .default))
+//                                .foregroundColor(.white)
+//                                .frame(maxWidth: .infinity)
+//                                .padding(15)
+//
+//
+//
+//                                .cornerRadius(15)
+//                                .background {
+//                                    LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
+//                                }
+//                                .clipShape(Capsule())
+//                        }
+                        
+                        if answers[gradeToContent(letter: nowQuiz.answer)] == selected {
+                            Text(answers[gradeToContent(letter: nowQuiz.answer)])
+                                .font(.system(size: 18, weight: .bold, design: .default))
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(15)
+                            
+                            
+                                .cornerRadius(15)
+                                .background {
+                                    LinearGradient(colors: [.green, Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
+                                }
+                                .clipShape(Capsule())
+                        }
+                        else {
+                            Text(answers[index])
+                                .font(.system(size: 18, weight: .bold, design: .default))
+                                .themeColor()
+                                .frame(maxWidth: .infinity)
+                                .padding(15)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 30)
+                                        .stroke(Color(UIColor(named: "themeColor1")!), lineWidth: 3)
+                                )
+                        }
+                        
+                    }
+                    
+                }
+            }
+            
+            
+            
         }
+        
         .padding(.horizontal, 40)
+        .onAppear {
+            answers = [nowQuiz.A, nowQuiz.B, nowQuiz.C, nowQuiz.D]
+        }
     }
 }
 
