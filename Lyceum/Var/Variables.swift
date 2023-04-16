@@ -15,6 +15,6 @@ var avail = 2
 
 var show = false
 
-let apikey2 = "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"
+let apikey2 = "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"
 
 var myQuiz = Quiz(questions: [QuizQuestion]())
