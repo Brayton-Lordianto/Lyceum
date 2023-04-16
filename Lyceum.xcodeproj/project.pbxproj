@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917754A29B4963800EEC302 /* GPT3ViewModel.swift */; };
+		2917754E29B606EC00EEC302 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 2917754D29B606EC00EEC302 /* OpenAI */; };
+		2917755029B6083800EEC302 /* GPT3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2917754F29B6083800EEC302 /* GPT3View.swift */; };
+		2917755329B60B2100EEC302 /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2917755229B60B2100EEC302 /* ChatGPTSwift */; };
+		29646507299F7E12005146FD /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29646506299F7E12005146FD /* Message.swift */; };
+		2981BF12299256BB00D40C7A /* LyceumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF11299256BB00D40C7A /* LyceumApp.swift */; };
+		2981BF14299256BB00D40C7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF13299256BB00D40C7A /* ContentView.swift */; };
+		2981BF16299256BE00D40C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2981BF15299256BE00D40C7A /* Assets.xcassets */; };
+		2981BF19299256BE00D40C7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2981BF18299256BE00D40C7A /* Preview Assets.xcassets */; };
+		2981BF212992578800D40C7A /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2981BF202992578800D40C7A /* OpenAIKit */; };
+		2981BF2B2992589300D40C7A /* DalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2A2992589300D40C7A /* DalleView.swift */; };
+		2981BF2D299258D200D40C7A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2C299258D200D40C7A /* MessageView.swift */; };
+		2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */; };
+		2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF342992964000D40C7A /* DalleViewModel.swift */; };
+		29CCEE1C29C4A16500452C0D /* Lyceum-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEE1B29C4A16500452C0D /* Lyceum-Info.plist */; };
+		8F31010029EB756D005F2206 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3100FF29EB756D005F2206 /* LearnView.swift */; };
+		8F31010329EB7B51005F2206 /* ElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F31010229EB7B51005F2206 /* ElementModifier.swift */; };
+		8FEADC5729EBC4B8004696F7 /* VersusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5629EBC4B8004696F7 /* VersusView.swift */; };
+		8FEADC5929EBC565004696F7 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5829EBC565004696F7 /* ShopView.swift */; };
+		8FEADC5B29EBC93B004696F7 /* PrimaryButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5A29EBC93B004696F7 /* PrimaryButtonModel.swift */; };
+		8FEADC5E29EBCD6A004696F7 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5D29EBCD6A004696F7 /* SectionView.swift */; };
+		8FEADC6129EBCE3D004696F7 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6029EBCE3D004696F7 /* Variables.swift */; };
+		8FEADC6329EBD7FF004696F7 /* GPT_Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6229EBD7FF004696F7 /* GPT_Prompts.swift */; };
+		8FEADC6529EBD822004696F7 /* GPT_responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6429EBD822004696F7 /* GPT_responses.swift */; };
+		8FEADC6729EBDECA004696F7 /* ViewControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6629EBDECA004696F7 /* ViewControlModel.swift */; };
+		8FEADC6A29EBE5BB004696F7 /* CurriculumVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6929EBE5BB004696F7 /* CurriculumVIew.swift */; };
+		8FEADC6C29EBF01B004696F7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6B29EBF01B004696F7 /* LoadingView.swift */; };
+		8FEADC6E29EC0628004696F7 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6D29EC0628004696F7 /* QuizView.swift */; };
+		8FEADC7029EC1002004696F7 /* QuizLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6F29EC1002004696F7 /* QuizLayoutView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2917754A29B4963800EEC302 /* GPT3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3ViewModel.swift; sourceTree = "<group>"; };
+		2917754F29B6083800EEC302 /* GPT3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT3View.swift; sourceTree = "<group>"; };
+		29646506299F7E12005146FD /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2981BF0E299256BB00D40C7A /* Lyceum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyceum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2981BF11299256BB00D40C7A /* LyceumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyceumApp.swift; sourceTree = "<group>"; };
+		2981BF13299256BB00D40C7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2981BF15299256BE00D40C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2981BF18299256BE00D40C7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2981BF2A2992589300D40C7A /* DalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleView.swift; sourceTree = "<group>"; };
+		2981BF2C299258D200D40C7A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIndicatorView.swift; sourceTree = "<group>"; };
+		2981BF342992964000D40C7A /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
+		29CCEE1B29C4A16500452C0D /* Lyceum-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Lyceum-Info.plist"; sourceTree = "<group>"; };
+		8F3100FF29EB756D005F2206 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		8F31010229EB7B51005F2206 /* ElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementModifier.swift; sourceTree = "<group>"; };
+		8FEADC5629EBC4B8004696F7 /* VersusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusView.swift; sourceTree = "<group>"; };
+		8FEADC5829EBC565004696F7 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		8FEADC5A29EBC93B004696F7 /* PrimaryButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModel.swift; sourceTree = "<group>"; };
+		8FEADC5D29EBCD6A004696F7 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		8FEADC6029EBCE3D004696F7 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		8FEADC6229EBD7FF004696F7 /* GPT_Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_Prompts.swift; sourceTree = "<group>"; };
+		8FEADC6429EBD822004696F7 /* GPT_responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_responses.swift; sourceTree = "<group>"; };
+		8FEADC6629EBDECA004696F7 /* ViewControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlModel.swift; sourceTree = "<group>"; };
+		8FEADC6929EBE5BB004696F7 /* CurriculumVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVIew.swift; sourceTree = "<group>"; };
+		8FEADC6B29EBF01B004696F7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8FEADC6D29EC0628004696F7 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		8FEADC6F29EC1002004696F7 /* QuizLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLayoutView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2981BF0B299256BB00D40C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2917754E29B606EC00EEC302 /* OpenAI in Frameworks */,
+				2917755329B60B2100EEC302 /* ChatGPTSwift in Frameworks */,
+				2981BF212992578800D40C7A /* OpenAIKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29646505299F7E02005146FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29646506299F7E12005146FD /* Message.swift */,
+				8FEADC6429EBD822004696F7 /* GPT_responses.swift */,
+				8FEADC6229EBD7FF004696F7 /* GPT_Prompts.swift */,
+				8FEADC6629EBDECA004696F7 /* ViewControlModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2981BF05299256BB00D40C7A = {
+			isa = PBXGroup;
+			children = (
+				29CCEE1B29C4A16500452C0D /* Lyceum-Info.plist */,
+				2981BF10299256BB00D40C7A /* Lyceum */,
+				2981BF0F299256BB00D40C7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2981BF0F299256BB00D40C7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2981BF0E299256BB00D40C7A /* Lyceum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2981BF10299256BB00D40C7A /* Lyceum */ = {
+			isa = PBXGroup;
+			children = (
+				29646505299F7E02005146FD /* Models */,
+				2981BF262992583C00D40C7A /* ViewModels */,
+				8FEADC5F29EBCE16004696F7 /* Var */,
+				8FEADC6829EBE4F2004696F7 /* CurriculumModel */,
+				8F31010129EB7B27005F2206 /* Modifier */,
+				2981BF252992581600D40C7A /* Views */,
+				2981BF13299256BB00D40C7A /* ContentView.swift */,
+				2981BF11299256BB00D40C7A /* LyceumApp.swift */,
+				2981BF15299256BE00D40C7A /* Assets.xcassets */,
+				2981BF17299256BE00D40C7A /* Preview Content */,
+			);
+			path = Lyceum;
+			sourceTree = "<group>";
+		};
+		2981BF17299256BE00D40C7A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2981BF18299256BE00D40C7A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2981BF252992581600D40C7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F3100FE29EB755C005F2206 /* Main */,
+				8FEADC5C29EBCD2A004696F7 /* Branch View */,
+				8F3100FD29EB754A005F2206 /* OpenAi */,
+				2981BF272992584B00D40C7A /* Messages */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2981BF262992583C00D40C7A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2981BF342992964000D40C7A /* DalleViewModel.swift */,
+				2917754A29B4963800EEC302 /* GPT3ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2981BF272992584B00D40C7A /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				2981BF2C299258D200D40C7A /* MessageView.swift */,
+				2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		8F3100FD29EB754A005F2206 /* OpenAi */ = {
+			isa = PBXGroup;
+			children = (
+				2981BF2A2992589300D40C7A /* DalleView.swift */,
+				2917754F29B6083800EEC302 /* GPT3View.swift */,
+			);
+			path = OpenAi;
+			sourceTree = "<group>";
+		};
+		8F3100FE29EB755C005F2206 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8F3100FF29EB756D005F2206 /* LearnView.swift */,
+				8FEADC5629EBC4B8004696F7 /* VersusView.swift */,
+				8FEADC5829EBC565004696F7 /* ShopView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8F31010129EB7B27005F2206 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				8F31010229EB7B51005F2206 /* ElementModifier.swift */,
+				8FEADC5A29EBC93B004696F7 /* PrimaryButtonModel.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		8FEADC5C29EBCD2A004696F7 /* Branch View */ = {
+			isa = PBXGroup;
+			children = (
+				8FEADC5D29EBCD6A004696F7 /* SectionView.swift */,
+			);
+			path = "Branch View";
+			sourceTree = "<group>";
+		};
+		8FEADC5F29EBCE16004696F7 /* Var */ = {
+			isa = PBXGroup;
+			children = (
+				8FEADC6029EBCE3D004696F7 /* Variables.swift */,
+			);
+			path = Var;
+			sourceTree = "<group>";
+		};
+		8FEADC6829EBE4F2004696F7 /* CurriculumModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FEADC6929EBE5BB004696F7 /* CurriculumVIew.swift */,
+				8FEADC6D29EC0628004696F7 /* QuizView.swift */,
+				8FEADC6F29EC1002004696F7 /* QuizLayoutView.swift */,
+				8FEADC6B29EBF01B004696F7 /* LoadingView.swift */,
+			);
+			path = CurriculumModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2981BF0D299256BB00D40C7A /* Lyceum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2981BF1C299256BE00D40C7A /* Build configuration list for PBXNativeTarget "Lyceum" */;
+			buildPhases = (
+				2981BF0A299256BB00D40C7A /* Sources */,
+				2981BF0B299256BB00D40C7A /* Frameworks */,
+				2981BF0C299256BB00D40C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lyceum;
+			packageProductDependencies = (
+				2981BF202992578800D40C7A /* OpenAIKit */,
+				2917754D29B606EC00EEC302 /* OpenAI */,
+				2917755229B60B2100EEC302 /* ChatGPTSwift */,
+			);
+			productName = "OpenAI chat-dalle";
+			productReference = 2981BF0E299256BB00D40C7A /* Lyceum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2981BF06299256BB00D40C7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2981BF0D299256BB00D40C7A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 2981BF09299256BB00D40C7A /* Build configuration list for PBXProject "Lyceum" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2981BF05299256BB00D40C7A;
+			packageReferences = (
+				2981BF1F2992578800D40C7A /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+				2917754C29B606EC00EEC302 /* XCRemoteSwiftPackageReference "openai" */,
+				2917755129B60B2100EEC302 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
+			productRefGroup = 2981BF0F299256BB00D40C7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2981BF0D299256BB00D40C7A /* Lyceum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2981BF0C299256BB00D40C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CCEE1C29C4A16500452C0D /* Lyceum-Info.plist in Resources */,
+				2981BF19299256BE00D40C7A /* Preview Assets.xcassets in Resources */,
+				2981BF16299256BE00D40C7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2981BF0A299256BB00D40C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */,
+				2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */,
+				8FEADC5E29EBCD6A004696F7 /* SectionView.swift in Sources */,
+				8FEADC6129EBCE3D004696F7 /* Variables.swift in Sources */,
+				8FEADC5B29EBC93B004696F7 /* PrimaryButtonModel.swift in Sources */,
+				8FEADC7029EC1002004696F7 /* QuizLayoutView.swift in Sources */,
+				8FEADC6C29EBF01B004696F7 /* LoadingView.swift in Sources */,
+				8FEADC5729EBC4B8004696F7 /* VersusView.swift in Sources */,
+				8F31010029EB756D005F2206 /* LearnView.swift in Sources */,
+				8F31010329EB7B51005F2206 /* ElementModifier.swift in Sources */,
+				8FEADC6529EBD822004696F7 /* GPT_responses.swift in Sources */,
+				29646507299F7E12005146FD /* Message.swift in Sources */,
+				8FEADC6329EBD7FF004696F7 /* GPT_Prompts.swift in Sources */,
+				2981BF14299256BB00D40C7A /* ContentView.swift in Sources */,
+				8FEADC6E29EC0628004696F7 /* QuizView.swift in Sources */,
+				2981BF12299256BB00D40C7A /* LyceumApp.swift in Sources */,
+				2917755029B6083800EEC302 /* GPT3View.swift in Sources */,
+				8FEADC5929EBC565004696F7 /* ShopView.swift in Sources */,
+				8FEADC6729EBDECA004696F7 /* ViewControlModel.swift in Sources */,
+				2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */,
+				8FEADC6A29EBE5BB004696F7 /* CurriculumVIew.swift in Sources */,
+				2981BF2B2992589300D40C7A /* DalleView.swift in Sources */,
+				2981BF2D299258D200D40C7A /* MessageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2981BF1A299256BE00D40C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "\"Lyceum-Info.plist\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2981BF1B299256BE00D40C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "\"Lyceum-Info.plist\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2981BF1D299256BE00D40C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lyceum/Preview Content\"";
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lyceum-Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "Lyceum-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = .;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				"INFOPLIST_KEY_UILaunchStoryboardName[sdk=*]" = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ambermate.Lyceum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2981BF1E299256BE00D40C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lyceum/Preview Content\"";
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Lyceum-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = .;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ambermate.Lyceum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2981BF09299256BB00D40C7A /* Build configuration list for PBXProject "Lyceum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2981BF1A299256BE00D40C7A /* Debug */,
+				2981BF1B299256BE00D40C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2981BF1C299256BE00D40C7A /* Build configuration list for PBXNativeTarget "Lyceum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2981BF1D299256BE00D40C7A /* Debug */,
+				2981BF1E299256BE00D40C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2917754C29B606EC00EEC302 /* XCRemoteSwiftPackageReference "openai" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/colealanroberts/openai";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		2917755129B60B2100EEC302 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		2981BF1F2992578800D40C7A /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2917754D29B606EC00EEC302 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2917754C29B606EC00EEC302 /* XCRemoteSwiftPackageReference "openai" */;
+			productName = OpenAI;
+		};
+		2917755229B60B2100EEC302 /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2917755129B60B2100EEC302 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+		2981BF202992578800D40C7A /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2981BF1F2992578800D40C7A /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2981BF06299256BB00D40C7A /* Project object */;
+}
