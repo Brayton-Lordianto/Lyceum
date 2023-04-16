@@ -118,21 +118,21 @@ struct QuizLayoutView: View {
                     Spacer().frame(height: 7)
                     ForEach(0..<4, id: \.self) { index in
                         
-//                        if selected == answers[index] {
-//                            Text(answers[index])
-//                                .font(.system(size: 18, weight: .bold, design: .default))
-//                                .foregroundColor(.white)
-//                                .frame(maxWidth: .infinity)
-//                                .padding(15)
-//
-//
-//
-//                                .cornerRadius(15)
-//                                .background {
-//                                    LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
-//                                }
-//                                .clipShape(Capsule())
-//                        }
+                        //                        if selected == answers[index] {
+                        //                            Text(answers[index])
+                        //                                .font(.system(size: 18, weight: .bold, design: .default))
+                        //                                .foregroundColor(.white)
+                        //                                .frame(maxWidth: .infinity)
+                        //                                .padding(15)
+                        //
+                        //
+                        //
+                        //                                .cornerRadius(15)
+                        //                                .background {
+                        //                                    LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
+                        //                                }
+                        //                                .clipShape(Capsule())
+                        //                        }
                         
                         if answers[gradeToContent(letter: nowQuiz.answer)] == selected {
                             Text(answers[gradeToContent(letter: nowQuiz.answer)])
@@ -164,11 +164,7 @@ struct QuizLayoutView: View {
                     
                 }
             }
-            
-            
-            
         }
-        
         .padding(.horizontal, 40)
         .onAppear {
             answers = [nowQuiz.A, nowQuiz.B, nowQuiz.C, nowQuiz.D]
