@@ -22,7 +22,7 @@ struct SectionView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 ForEach(0..<avail) { index in
-                    PrimaryButton(title: sections[index], content: {CurriculumView(title: sections[index], content: {QuizView(title: sections[index], content: {SectionView()}, i: 0)})})
+                    PrimaryButton(title: sections[index], content: {CurriculumView(title: sections[index], content: {QuizLayoutView()})})//content: {QuizView(title: sections[index], content: {SectionView()}, i: 0)})})
                         .padding(.vertical, 3)
                 }
                 
