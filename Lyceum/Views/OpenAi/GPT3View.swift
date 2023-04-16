@@ -88,7 +88,7 @@ struct GPT3View: View {
             .gesture(TapGesture().onEnded {
                 hideKeyboard()
             })
-            .navigationTitle("GPT 3.5 Turbo")
+            .navigationTitle("Penguin")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

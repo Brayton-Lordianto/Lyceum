@@ -15,6 +15,7 @@ struct LyceumApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(dalleViewModel)
+                .environmentObject(ViewControlModel())
 
         }
     }

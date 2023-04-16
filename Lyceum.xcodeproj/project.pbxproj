@@ -22,22 +22,20 @@
 		2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */; };
 		2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF342992964000D40C7A /* DalleViewModel.swift */; };
 		29CCEE1C29C4A16500452C0D /* Lyceum-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEE1B29C4A16500452C0D /* Lyceum-Info.plist */; };
-		8F31010029EB756D005F2206 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3100FF29EB756D005F2206 /* Home.swift */; };
+		8F31010029EB756D005F2206 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3100FF29EB756D005F2206 /* LearnView.swift */; };
 		8F31010329EB7B51005F2206 /* ElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F31010229EB7B51005F2206 /* ElementModifier.swift */; };
-		8F31011329EB7D91005F2206 /* PlusJakartaSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010529EB7D91005F2206 /* PlusJakartaSans-LightItalic.ttf */; };
-		8F31011429EB7D91005F2206 /* PlusJakartaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010629EB7D91005F2206 /* PlusJakartaSans-ExtraBold.ttf */; };
-		8F31011529EB7D91005F2206 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010729EB7D91005F2206 /* PlusJakartaSans-SemiBold.ttf */; };
-		8F31011629EB7D91005F2206 /* PlusJakartaSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010829EB7D91005F2206 /* PlusJakartaSans-ExtraLightItalic.ttf */; };
-		8F31011729EB7D91005F2206 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010929EB7D91005F2206 /* PlusJakartaSans-Regular.ttf */; };
-		8F31011829EB7D91005F2206 /* PlusJakartaSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010A29EB7D91005F2206 /* PlusJakartaSans-ExtraLight.ttf */; };
-		8F31011929EB7D91005F2206 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010B29EB7D91005F2206 /* PlusJakartaSans-Medium.ttf */; };
-		8F31011A29EB7D91005F2206 /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010C29EB7D91005F2206 /* PlusJakartaSans-SemiBoldItalic.ttf */; };
-		8F31011B29EB7D91005F2206 /* PlusJakartaSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010D29EB7D91005F2206 /* PlusJakartaSans-ExtraBoldItalic.ttf */; };
-		8F31011C29EB7D91005F2206 /* PlusJakartaSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010E29EB7D91005F2206 /* PlusJakartaSans-Italic.ttf */; };
-		8F31011D29EB7D91005F2206 /* PlusJakartaSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31010F29EB7D91005F2206 /* PlusJakartaSans-BoldItalic.ttf */; };
-		8F31011E29EB7D91005F2206 /* PlusJakartaSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31011029EB7D91005F2206 /* PlusJakartaSans-MediumItalic.ttf */; };
-		8F31011F29EB7D91005F2206 /* Ja-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31011129EB7D91005F2206 /* Ja-Bold.ttf */; };
-		8F31012029EB7D91005F2206 /* PlusJakartaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F31011229EB7D91005F2206 /* PlusJakartaSans-Light.ttf */; };
+		8FEADC5729EBC4B8004696F7 /* VersusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5629EBC4B8004696F7 /* VersusView.swift */; };
+		8FEADC5929EBC565004696F7 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5829EBC565004696F7 /* ShopView.swift */; };
+		8FEADC5B29EBC93B004696F7 /* PrimaryButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5A29EBC93B004696F7 /* PrimaryButtonModel.swift */; };
+		8FEADC5E29EBCD6A004696F7 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC5D29EBCD6A004696F7 /* SectionView.swift */; };
+		8FEADC6129EBCE3D004696F7 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6029EBCE3D004696F7 /* Variables.swift */; };
+		8FEADC6329EBD7FF004696F7 /* GPT_Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6229EBD7FF004696F7 /* GPT_Prompts.swift */; };
+		8FEADC6529EBD822004696F7 /* GPT_responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6429EBD822004696F7 /* GPT_responses.swift */; };
+		8FEADC6729EBDECA004696F7 /* ViewControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6629EBDECA004696F7 /* ViewControlModel.swift */; };
+		8FEADC6A29EBE5BB004696F7 /* CurriculumVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6929EBE5BB004696F7 /* CurriculumVIew.swift */; };
+		8FEADC6C29EBF01B004696F7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6B29EBF01B004696F7 /* LoadingView.swift */; };
+		8FEADC6E29EC0628004696F7 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6D29EC0628004696F7 /* QuizView.swift */; };
+		8FEADC7029EC1002004696F7 /* QuizLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEADC6F29EC1002004696F7 /* QuizLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,22 +52,20 @@
 		2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIndicatorView.swift; sourceTree = "<group>"; };
 		2981BF342992964000D40C7A /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
 		29CCEE1B29C4A16500452C0D /* Lyceum-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Lyceum-Info.plist"; sourceTree = "<group>"; };
-		8F3100FF29EB756D005F2206 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8F3100FF29EB756D005F2206 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		8F31010229EB7B51005F2206 /* ElementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementModifier.swift; sourceTree = "<group>"; };
-		8F31010529EB7D91005F2206 /* PlusJakartaSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		8F31010629EB7D91005F2206 /* PlusJakartaSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		8F31010729EB7D91005F2206 /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		8F31010829EB7D91005F2206 /* PlusJakartaSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		8F31010929EB7D91005F2206 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
-		8F31010A29EB7D91005F2206 /* PlusJakartaSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraLight.ttf"; sourceTree = "<group>"; };
-		8F31010B29EB7D91005F2206 /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
-		8F31010C29EB7D91005F2206 /* PlusJakartaSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		8F31010D29EB7D91005F2206 /* PlusJakartaSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		8F31010E29EB7D91005F2206 /* PlusJakartaSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Italic.ttf"; sourceTree = "<group>"; };
-		8F31010F29EB7D91005F2206 /* PlusJakartaSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		8F31011029EB7D91005F2206 /* PlusJakartaSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-MediumItalic.ttf"; sourceTree = "<group>"; };
-		8F31011129EB7D91005F2206 /* Ja-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ja-Bold.ttf"; sourceTree = "<group>"; };
-		8F31011229EB7D91005F2206 /* PlusJakartaSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Light.ttf"; sourceTree = "<group>"; };
+		8FEADC5629EBC4B8004696F7 /* VersusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusView.swift; sourceTree = "<group>"; };
+		8FEADC5829EBC565004696F7 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		8FEADC5A29EBC93B004696F7 /* PrimaryButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModel.swift; sourceTree = "<group>"; };
+		8FEADC5D29EBCD6A004696F7 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		8FEADC6029EBCE3D004696F7 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		8FEADC6229EBD7FF004696F7 /* GPT_Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_Prompts.swift; sourceTree = "<group>"; };
+		8FEADC6429EBD822004696F7 /* GPT_responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_responses.swift; sourceTree = "<group>"; };
+		8FEADC6629EBDECA004696F7 /* ViewControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControlModel.swift; sourceTree = "<group>"; };
+		8FEADC6929EBE5BB004696F7 /* CurriculumVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumVIew.swift; sourceTree = "<group>"; };
+		8FEADC6B29EBF01B004696F7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8FEADC6D29EC0628004696F7 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		8FEADC6F29EC1002004696F7 /* QuizLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				29646506299F7E12005146FD /* Message.swift */,
+				8FEADC6429EBD822004696F7 /* GPT_responses.swift */,
+				8FEADC6229EBD7FF004696F7 /* GPT_Prompts.swift */,
+				8FEADC6629EBDECA004696F7 /* ViewControlModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,9 +115,10 @@
 			children = (
 				29646505299F7E02005146FD /* Models */,
 				2981BF262992583C00D40C7A /* ViewModels */,
+				8FEADC5F29EBCE16004696F7 /* Var */,
+				8FEADC6829EBE4F2004696F7 /* CurriculumModel */,
 				8F31010129EB7B27005F2206 /* Modifier */,
 				2981BF252992581600D40C7A /* Views */,
-				8F31010429EB7D41005F2206 /* fonts */,
 				2981BF13299256BB00D40C7A /* ContentView.swift */,
 				2981BF11299256BB00D40C7A /* LyceumApp.swift */,
 				2981BF15299256BE00D40C7A /* Assets.xcassets */,
@@ -139,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				8F3100FE29EB755C005F2206 /* Main */,
+				8FEADC5C29EBCD2A004696F7 /* Branch View */,
 				8F3100FD29EB754A005F2206 /* OpenAi */,
 				2981BF272992584B00D40C7A /* Messages */,
 			);
@@ -175,7 +176,9 @@
 		8F3100FE29EB755C005F2206 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				8F3100FF29EB756D005F2206 /* Home.swift */,
+				8F3100FF29EB756D005F2206 /* LearnView.swift */,
+				8FEADC5629EBC4B8004696F7 /* VersusView.swift */,
+				8FEADC5829EBC565004696F7 /* ShopView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -184,29 +187,36 @@
 			isa = PBXGroup;
 			children = (
 				8F31010229EB7B51005F2206 /* ElementModifier.swift */,
+				8FEADC5A29EBC93B004696F7 /* PrimaryButtonModel.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
 		};
-		8F31010429EB7D41005F2206 /* fonts */ = {
+		8FEADC5C29EBCD2A004696F7 /* Branch View */ = {
 			isa = PBXGroup;
 			children = (
-				8F31011129EB7D91005F2206 /* Ja-Bold.ttf */,
-				8F31010F29EB7D91005F2206 /* PlusJakartaSans-BoldItalic.ttf */,
-				8F31010629EB7D91005F2206 /* PlusJakartaSans-ExtraBold.ttf */,
-				8F31010D29EB7D91005F2206 /* PlusJakartaSans-ExtraBoldItalic.ttf */,
-				8F31010A29EB7D91005F2206 /* PlusJakartaSans-ExtraLight.ttf */,
-				8F31010829EB7D91005F2206 /* PlusJakartaSans-ExtraLightItalic.ttf */,
-				8F31010E29EB7D91005F2206 /* PlusJakartaSans-Italic.ttf */,
-				8F31011229EB7D91005F2206 /* PlusJakartaSans-Light.ttf */,
-				8F31010529EB7D91005F2206 /* PlusJakartaSans-LightItalic.ttf */,
-				8F31010B29EB7D91005F2206 /* PlusJakartaSans-Medium.ttf */,
-				8F31011029EB7D91005F2206 /* PlusJakartaSans-MediumItalic.ttf */,
-				8F31010929EB7D91005F2206 /* PlusJakartaSans-Regular.ttf */,
-				8F31010729EB7D91005F2206 /* PlusJakartaSans-SemiBold.ttf */,
-				8F31010C29EB7D91005F2206 /* PlusJakartaSans-SemiBoldItalic.ttf */,
+				8FEADC5D29EBCD6A004696F7 /* SectionView.swift */,
 			);
-			path = fonts;
+			path = "Branch View";
+			sourceTree = "<group>";
+		};
+		8FEADC5F29EBCE16004696F7 /* Var */ = {
+			isa = PBXGroup;
+			children = (
+				8FEADC6029EBCE3D004696F7 /* Variables.swift */,
+			);
+			path = Var;
+			sourceTree = "<group>";
+		};
+		8FEADC6829EBE4F2004696F7 /* CurriculumModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FEADC6929EBE5BB004696F7 /* CurriculumVIew.swift */,
+				8FEADC6D29EC0628004696F7 /* QuizView.swift */,
+				8FEADC6F29EC1002004696F7 /* QuizLayoutView.swift */,
+				8FEADC6B29EBF01B004696F7 /* LoadingView.swift */,
+			);
+			path = CurriculumModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,22 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F31011C29EB7D91005F2206 /* PlusJakartaSans-Italic.ttf in Resources */,
-				8F31011D29EB7D91005F2206 /* PlusJakartaSans-BoldItalic.ttf in Resources */,
 				29CCEE1C29C4A16500452C0D /* Lyceum-Info.plist in Resources */,
-				8F31011529EB7D91005F2206 /* PlusJakartaSans-SemiBold.ttf in Resources */,
-				8F31011429EB7D91005F2206 /* PlusJakartaSans-ExtraBold.ttf in Resources */,
-				8F31011629EB7D91005F2206 /* PlusJakartaSans-ExtraLightItalic.ttf in Resources */,
-				8F31011329EB7D91005F2206 /* PlusJakartaSans-LightItalic.ttf in Resources */,
-				8F31011729EB7D91005F2206 /* PlusJakartaSans-Regular.ttf in Resources */,
-				8F31011E29EB7D91005F2206 /* PlusJakartaSans-MediumItalic.ttf in Resources */,
-				8F31011F29EB7D91005F2206 /* Ja-Bold.ttf in Resources */,
-				8F31012029EB7D91005F2206 /* PlusJakartaSans-Light.ttf in Resources */,
 				2981BF19299256BE00D40C7A /* Preview Assets.xcassets in Resources */,
-				8F31011929EB7D91005F2206 /* PlusJakartaSans-Medium.ttf in Resources */,
-				8F31011A29EB7D91005F2206 /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */,
-				8F31011829EB7D91005F2206 /* PlusJakartaSans-ExtraLight.ttf in Resources */,
-				8F31011B29EB7D91005F2206 /* PlusJakartaSans-ExtraBoldItalic.ttf in Resources */,
 				2981BF16299256BE00D40C7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,13 +302,25 @@
 			files = (
 				2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */,
 				2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */,
-				8F31010029EB756D005F2206 /* Home.swift in Sources */,
+				8FEADC5E29EBCD6A004696F7 /* SectionView.swift in Sources */,
+				8FEADC6129EBCE3D004696F7 /* Variables.swift in Sources */,
+				8FEADC5B29EBC93B004696F7 /* PrimaryButtonModel.swift in Sources */,
+				8FEADC7029EC1002004696F7 /* QuizLayoutView.swift in Sources */,
+				8FEADC6C29EBF01B004696F7 /* LoadingView.swift in Sources */,
+				8FEADC5729EBC4B8004696F7 /* VersusView.swift in Sources */,
+				8F31010029EB756D005F2206 /* LearnView.swift in Sources */,
 				8F31010329EB7B51005F2206 /* ElementModifier.swift in Sources */,
+				8FEADC6529EBD822004696F7 /* GPT_responses.swift in Sources */,
 				29646507299F7E12005146FD /* Message.swift in Sources */,
+				8FEADC6329EBD7FF004696F7 /* GPT_Prompts.swift in Sources */,
 				2981BF14299256BB00D40C7A /* ContentView.swift in Sources */,
+				8FEADC6E29EC0628004696F7 /* QuizView.swift in Sources */,
 				2981BF12299256BB00D40C7A /* LyceumApp.swift in Sources */,
 				2917755029B6083800EEC302 /* GPT3View.swift in Sources */,
+				8FEADC5929EBC565004696F7 /* ShopView.swift in Sources */,
+				8FEADC6729EBDECA004696F7 /* ViewControlModel.swift in Sources */,
 				2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */,
+				8FEADC6A29EBE5BB004696F7 /* CurriculumVIew.swift in Sources */,
 				2981BF2B2992589300D40C7A /* DalleView.swift in Sources */,
 				2981BF2D299258D200D40C7A /* MessageView.swift in Sources */,
 			);

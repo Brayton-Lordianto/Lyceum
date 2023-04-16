@@ -20,11 +20,25 @@ struct ContentView: View {
 //                }
 //            }
 //        }
-        Text("he")
-            .foregroundStyle(
-                LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
-            )
+        
+        NavigationView {
+            TabView {
+                LearnView().tabItem {
+                    Label("Learn", systemImage: "ellipses.bubble")
+                       
+                }
+                VersusView().tabItem {
+                    Label("Versus", systemImage: "paintbrush")
+                       
+                }
+                ShopView().tabItem {
+                    Label("Shop", systemImage: "cart.fill")
+                       
+                }
+            }
+            .accentColor(Color(UIColor(named: "themeColor1")!))
             
+        }
     }
 }
 
