@@ -10,7 +10,7 @@ import ChatGPTSwift
 
 class GPT3ViewModel: ObservableObject {
 
-    let api = ChatGPTAPI(apiKey: "API-KEY")
+    let api = ChatGPTAPI(apiKey: "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")
     @Published var messages = [Message]()
     
     func getResponse(text: String) async{

@@ -7,14 +7,17 @@
 
 import SwiftUI
 
-struct ElementModifier: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct mainColor: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundStyle(
+                LinearGradient(colors: [Color(UIColor(named: "themeColor1")!), Color(UIColor(named: "themeColor2")!)], startPoint: .bottom, endPoint: .top)
+            )
     }
 }
 
-struct ElementModifier_Previews: PreviewProvider {
-    static var previews: some View {
-        ElementModifier()
+extension View {
+    func themeColor() -> some View {
+        modifier(mainColor())
     }
 }

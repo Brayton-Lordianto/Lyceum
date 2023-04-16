@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct OpenAI_chat_dalleApp: App {
+struct LyceumApp: App {
     let dalleViewModel = DalleViewModel()
 
     var body: some Scene {

@@ -9,7 +9,33 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            RoundedRectangle(cornerRadius: 25, style: .continuous)
+                .frame(height: 250)
+                .padding(.horizontal, 50)
+                //.padding(.bottom, 30)
+                .themeColor()
+                .overlay {
+                    Text("Learn")
+                        .foregroundColor(.white)
+                        .font(Font.custom("Ja-Bold", size: 30))
+                }
+            
+            Spacer()
+                .frame(height: 50)
+            
+            
+            RoundedRectangle(cornerRadius: 25, style: .continuous)
+                .frame(height: 250)
+                .padding(.horizontal, 50)
+                .themeColor()
+                .overlay {
+                    Text("Versus")
+                        .foregroundColor(.white)
+                        .font(.custom("PlusJakartaSans-ExtraBold", size: 30))
+                }
+            
+        }
     }
 }
 
