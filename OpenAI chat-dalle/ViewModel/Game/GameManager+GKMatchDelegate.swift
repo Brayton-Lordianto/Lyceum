@@ -15,11 +15,13 @@ extension GameManager: GKMatchDelegate {
     }
 
     func sendString(_ string: String) {
-        guard let match = match else { return }
+        print(match)
+        guard let match = match else { print("no match"); return }
         // let encoded = "strData:\(string)"
         let data = Data(string.utf8)
         do {
             try match.sendData(toAllPlayers: data, with: .reliable)
+            print("Sent data: \(string)")
         } catch {
             print("Error sending data: \(error.localizedDescription)")
         }

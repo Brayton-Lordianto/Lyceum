@@ -27,6 +27,7 @@
 		41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB229EB4FA8008F5C46 /* GameManager.swift */; };
 		41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */; };
 		41FB3BB829EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB729EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift */; };
+		41FB3BBB29EB7ACA008F5C46 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BBA29EB7ACA008F5C46 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		41FB3BB229EB4FA8008F5C46 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameManager+GKMatchmakerDelegate.swift"; sourceTree = "<group>"; };
 		41FB3BB729EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameManager+GKMatchDelegate.swift"; sourceTree = "<group>"; };
+		41FB3BBA29EB7ACA008F5C46 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				41FB3BAE29EB4F05008F5C46 /* OpenAI chat-dalle.entitlements */,
+				41FB3BB929EB7ABE008F5C46 /* View */,
 				41FB3BB129EB4F8C008F5C46 /* ViewModel */,
 				2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */,
 				41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */,
@@ -176,6 +179,14 @@
 				41FB3BB729EB55C8008F5C46 /* GameManager+GKMatchDelegate.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		41FB3BB929EB7ABE008F5C46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41FB3BBA29EB7ACA008F5C46 /* GameView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 				2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */,
 				41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */,
 				2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */,
+				41FB3BBB29EB7ACA008F5C46 /* GameView.swift in Sources */,
 				41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */,
 				29646507299F7E12005146FD /* Message.swift in Sources */,
 				2981BF14299256BB00D40C7A /* ContentView2.swift in Sources */,

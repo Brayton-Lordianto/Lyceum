@@ -17,18 +17,21 @@ struct MyContentView: View {
             if gameManager.isGameOver {
                 Text("Game Over")
             } else if gameManager.inGame {
-                Text("In Game")
+                GameView(gameManager: gameManager)
             } else {
-                Text("Not in Game")
+                VStack {
+                    Button("Authenticate") {
+                        gameManager.authenticateUser()
+                    }
+                    
+                    Button("Start Game") {
+                        gameManager.startMatching()
+                    }
+                    Text("Not in Game")
+                }
+
             }
         
-            Button("Authenticate") {
-                gameManager.authenticateUser()
-            }
-            
-            Button("Start Game") {
-                gameManager.startMatching()
-            }
         }
     }
 }

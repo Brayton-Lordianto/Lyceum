@@ -60,6 +60,7 @@ class GameManager: NSObject, ObservableObject {
 
         let mmvc = GKMatchmakerViewController(matchRequest: request)
         // mmvc.showExistingMatches = false
+        mmvc?.matchmakerDelegate = self
         // mmvc.turnBasedMatchmakerDelegate = self
         rootViewController?.present(mmvc!, animated: true, completion: nil)
     }
@@ -67,9 +68,13 @@ class GameManager: NSObject, ObservableObject {
     func startGame(newMatch: GKMatch) {
         inGame = true
         isGameOver = false
-        otherPlayer = match?.players.first
         match = newMatch
-
-        
+        otherPlayer = match?.players.first
+        sendString("hi there")
+        print("Starting game")
+    }
+    
+    func answerQuestion() {
+        sendString("Answered")
     }
 }
