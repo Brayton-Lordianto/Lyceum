@@ -10,7 +10,8 @@ import SwiftUI
 struct SectionView: View {
     @EnvironmentObject var controlModel: ViewControlModel
     
-    let sections = ["HTML", "CSS", "JavaScript", "Responsive Design", "Bootstrap", "jQuery", "Web Accessibility", "Git", "Command Line", "APIs", "AJAX", "Node.js"]
+//    let sections = ["HTML", "CSS", "JavaScript", "Responsive Design", "Bootstrap", "jQuery", "Web Accessibility", "Git", "Command Line", "APIs", "AJAX", "Node.js"]
+    let sections: [String]
     var body: some View {
         VStack {
             Text(chosenTopic)
@@ -22,7 +23,18 @@ struct SectionView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 ForEach(0..<avail) { index in
-                    PrimaryButton(title: sections[index], content: {CurriculumView(title: sections[index], content: {QuizView(title: sections[index], content: {SectionView()}, i: 0)})})
+                    PrimaryButton(title: sections[index], content: {
+                        CurriculumView(title: sections[index], content: {
+                            QuizView(title: sections[index], content: {
+                                
+                                    }, i: 0)
+                            }
+                        )
+                        }
+                    )
+                    .onTapGesture {
+                        print("do something....")
+                    }
                         .padding(.vertical, 3)
                 }
                 
@@ -61,10 +73,10 @@ struct SectionView: View {
         }
     }
 }
-
-struct SectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        SectionView()
-            .environmentObject(ViewControlModel())
-    }
-}
+//
+//struct SectionView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SectionView()
+//            .environmentObject(ViewControlModel())
+//    }
+//}

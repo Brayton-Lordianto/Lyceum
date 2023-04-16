@@ -7,8 +7,13 @@
 
 import SwiftUI
 
+
 struct LearnView: View {
     @State private var topic = ""
+    @State var doneLoading: Bool = false
+    @State var progress: CGFloat = 0
+    @StateObject var gpt3 = GPT3ViewModel()
+
     var body: some View {
         VStack {
             Text("Hi, Penguin!")
@@ -34,7 +39,20 @@ struct LearnView: View {
             Spacer()
             
             Button(action: {chosenTopic = topic}) {
-                PrimaryButton(title: "Generate", content: {SectionView()})
+                PrimaryButton(title: "Generate", content: {
+                    // MARK: generate sections using topic and feed it into SectionView
+                    if !doneLoading {
+                        LoadingView(progress: $progress)
+                            .onAppear {
+                                Task {
+                                    await gpt3.getSections(on:topic)
+                                }
+                                chosenTopic = topic
+                            }
+                    } else {
+                        SectionView(sections: gpt3.sections)
+                    }
+                })
             }
             
             Spacer()
@@ -42,7 +60,16 @@ struct LearnView: View {
             
         }
         .padding(.horizontal, 40)
-        
+        .onChange(of: gpt3.sections) { newValue in
+            self.progress = 0
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                withAnimation {
+                    self.doneLoading = true
+                }
+            }
+        }
+
     }
 }
 
@@ -51,3 +78,7 @@ struct LearnView_Previews: PreviewProvider {
         LearnView()
     }
 }
+
+/*
+ 
+ */

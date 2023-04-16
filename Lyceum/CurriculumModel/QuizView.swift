@@ -119,12 +119,12 @@ struct QuizView<Content: View>: View {
 //            }
 //        }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 20) {
-                withAnimation {
-                    self.doneLoading = true
-                    self.progress = 0
-                }
-            }
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 20) {
+//                withAnimation {
+//                    self.doneLoading = true
+//                    self.progress = 0
+//                }
+//            }
         }
         
         
