@@ -10,7 +10,8 @@ import SwiftUI
 struct SectionView: View {
     @EnvironmentObject var controlModel: ViewControlModel
     
-    let sections = ["HTML", "CSS", "JavaScript", "Responsive Design", "Bootstrap", "jQuery", "Web Accessibility", "Git", "Command Line", "APIs", "AJAX", "Node.js"]
+//    let sections = ["HTML", "CSS", "JavaScript", "Responsive Design", "Bootstrap", "jQuery", "Web Accessibility", "Git", "Command Line", "APIs", "AJAX", "Node.js"]
+    let sections: [String]
     var body: some View {
         VStack {
             Text(chosenTopic)
@@ -61,10 +62,10 @@ struct SectionView: View {
         }
     }
 }
-
-struct SectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        SectionView()
-            .environmentObject(ViewControlModel())
-    }
-}
+//
+//struct SectionView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SectionView()
+//            .environmentObject(ViewControlModel())
+//    }
+//}

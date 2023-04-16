@@ -49,8 +49,24 @@ extension GPT3ViewModel {
     }
 
     func syllabusPrompt(_ message: String) -> String {
+        // generate a syllabus about the chosen topic "\(message)" with 1-4 word sections and 4-6 subsections in plaintext format.
+        print("calling syllabus prompt")
         return """
-            generate a syllabus about the chosen topic "\(message)" with 1-4 word sections and 4-6 subsections in plaintext format.
+            Write a four paragraph explainer exclusively about \(message). Only use four paragraphs, each with a header.
+
+        """
+    }
+
+    func sectionPrompt(_ message: String) -> String {
+        return """
+            generate a syllabus about the chosen topic "\(message)" in 6 subsections that encompass the topic. Format your answer as an array in the following json format:
+
+            [
+                "[section1]",
+                "[section2]",
+                "[section3]",
+                ...
+            ]
         """
     }
 }

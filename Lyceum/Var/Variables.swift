@@ -15,7 +15,7 @@ var avail = 2
 
 var show = false
 
-let apikey2 = ""
+let apikey2 = "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"
 
 var myQuiz = Quiz(questions: [
     QuizQuestion(question: "Which of the following is NOT a basic HTML tag?", A: "<html>", B: "<head>", C: "<body>", D: "<script>", answer: "D"),
