@@ -28,6 +28,24 @@
       }
     },
     {
+      "identity" : "igraphics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/benjaminsage/iGraphics.git",
+      "state" : {
+        "revision" : "2b0714f7fe333621365854ebdce44ea2db866405",
+        "version" : "0.0.7"
+      }
+    },
+    {
+      "identity" : "ipaymentbutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/benjaminsage/iPaymentButton.git",
+      "state" : {
+        "revision" : "e37a1808b4ae0da08a94b85d2c9d465d34360fbe",
+        "version" : "0.0.3"
+      }
+    },
+    {
       "identity" : "openai",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/colealanroberts/openai",

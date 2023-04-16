@@ -24,6 +24,9 @@
 		29CCEE1C29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */; };
 		4164B7F829EBAD3C00B3CEAB /* envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F729EBAD3C00B3CEAB /* envs.swift */; };
 		4164B7FA29EBB07B00B3CEAB /* GameManager+WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F929EBB07B00B3CEAB /* GameManager+WebSocketManager.swift */; };
+		4164B7FF29EBBC1600B3CEAB /* iPaymentButton in Frameworks */ = {isa = PBXBuildFile; productRef = 4164B7FE29EBBC1600B3CEAB /* iPaymentButton */; };
+		4164B80329EC4D1300B3CEAB /* ApplePayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B80229EC4D1300B3CEAB /* ApplePayManager.swift */; };
+		4164B80529EC4F9E00B3CEAB /* ApplePayManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B80429EC4F9E00B3CEAB /* ApplePayManager2.swift */; };
 		41FB3BB029EB4F59008F5C46 /* MyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */; };
 		41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB229EB4FA8008F5C46 /* GameManager.swift */; };
 		41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB3BB429EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift */; };
@@ -47,6 +50,9 @@
 		29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenAI-chat-dalle-Info.plist"; sourceTree = "<group>"; };
 		4164B7F729EBAD3C00B3CEAB /* envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envs.swift; sourceTree = "<group>"; };
 		4164B7F929EBB07B00B3CEAB /* GameManager+WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameManager+WebSocketManager.swift"; sourceTree = "<group>"; };
+		4164B80229EC4D1300B3CEAB /* ApplePayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayManager.swift; sourceTree = "<group>"; };
+		4164B80429EC4F9E00B3CEAB /* ApplePayManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayManager2.swift; sourceTree = "<group>"; };
+		4164B80629EC53BF00B3CEAB /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		41FB3BAE29EB4F05008F5C46 /* OpenAI chat-dalle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OpenAI chat-dalle.entitlements"; sourceTree = "<group>"; };
 		41FB3BAF29EB4F59008F5C46 /* MyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentView.swift; sourceTree = "<group>"; };
 		41FB3BB229EB4FA8008F5C46 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2917754E29B606EC00EEC302 /* OpenAI in Frameworks */,
+				4164B7FF29EBBC1600B3CEAB /* iPaymentButton in Frameworks */,
 				2917755329B60B2100EEC302 /* ChatGPTSwift in Frameworks */,
 				2981BF212992578800D40C7A /* OpenAIKit in Frameworks */,
 			);
@@ -80,6 +87,7 @@
 		2981BF05299256BB00D40C7A = {
 			isa = PBXGroup;
 			children = (
+				4164B80629EC53BF00B3CEAB /* Configuration.storekit */,
 				29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */,
 				2981BF10299256BB00D40C7A /* OpenAI chat-dalle */,
 				2981BF0F299256BB00D40C7A /* Products */,
@@ -156,6 +164,8 @@
 		41FB3BAD29EB3B94008F5C46 /* Archived */ = {
 			isa = PBXGroup;
 			children = (
+				4164B80229EC4D1300B3CEAB /* ApplePayManager.swift */,
+				4164B80429EC4F9E00B3CEAB /* ApplePayManager2.swift */,
 				2981BF13299256BB00D40C7A /* ContentView2.swift */,
 				4164B7F729EBAD3C00B3CEAB /* envs.swift */,
 				2981BF262992583C00D40C7A /* ViewModels */,
@@ -212,6 +222,7 @@
 				2981BF202992578800D40C7A /* OpenAIKit */,
 				2917754D29B606EC00EEC302 /* OpenAI */,
 				2917755229B60B2100EEC302 /* ChatGPTSwift */,
+				4164B7FE29EBBC1600B3CEAB /* iPaymentButton */,
 			);
 			productName = "OpenAI chat-dalle";
 			productReference = 2981BF0E299256BB00D40C7A /* OpenAI chat-dalle.app */;
@@ -245,6 +256,7 @@
 				2981BF1F2992578800D40C7A /* XCRemoteSwiftPackageReference "OpenAIKit" */,
 				2917754C29B606EC00EEC302 /* XCRemoteSwiftPackageReference "openai" */,
 				2917755129B60B2100EEC302 /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+				4164B7FD29EBBC1600B3CEAB /* XCRemoteSwiftPackageReference "iPaymentButton" */,
 			);
 			productRefGroup = 2981BF0F299256BB00D40C7A /* Products */;
 			projectDirPath = "";
@@ -277,6 +289,7 @@
 				2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */,
 				41FB3BB329EB4FA8008F5C46 /* GameManager.swift in Sources */,
 				2917754B29B4963800EEC302 /* GPT3ViewModel.swift in Sources */,
+				4164B80529EC4F9E00B3CEAB /* ApplePayManager2.swift in Sources */,
 				41FB3BBB29EB7ACA008F5C46 /* GameView.swift in Sources */,
 				4164B7F829EBAD3C00B3CEAB /* envs.swift in Sources */,
 				41FB3BB529EB546B008F5C46 /* GameManager+GKMatchmakerDelegate.swift in Sources */,
@@ -286,6 +299,7 @@
 				2917755029B6083800EEC302 /* GPT3View.swift in Sources */,
 				4164B7FA29EBB07B00B3CEAB /* GameManager+WebSocketManager.swift in Sources */,
 				2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */,
+				4164B80329EC4D1300B3CEAB /* ApplePayManager.swift in Sources */,
 				2981BF2B2992589300D40C7A /* DalleView.swift in Sources */,
 				41FB3BB029EB4F59008F5C46 /* MyContentView.swift in Sources */,
 				2981BF2D299258D200D40C7A /* MessageView.swift in Sources */,
@@ -523,6 +537,14 @@
 				kind = branch;
 			};
 		};
+		4164B7FD29EBBC1600B3CEAB /* XCRemoteSwiftPackageReference "iPaymentButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/benjaminsage/iPaymentButton.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -540,6 +562,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2981BF1F2992578800D40C7A /* XCRemoteSwiftPackageReference "OpenAIKit" */;
 			productName = OpenAIKit;
+		};
+		4164B7FE29EBBC1600B3CEAB /* iPaymentButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4164B7FD29EBBC1600B3CEAB /* XCRemoteSwiftPackageReference "iPaymentButton" */;
+			productName = iPaymentButton;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
