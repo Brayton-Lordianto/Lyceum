@@ -22,9 +22,9 @@
 		2981BF2F299258F800D40C7A /* MessageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */; };
 		2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2981BF342992964000D40C7A /* DalleViewModel.swift */; };
 		29CCEE1C29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */; };
-		4164B7F229EB8F0B00B3CEAB /* envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F129EB8F0B00B3CEAB /* envs.swift */; };
 		4164B7F429EB923600B3CEAB /* GPT_responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F329EB923600B3CEAB /* GPT_responses.swift */; };
 		4164B7F629EB930A00B3CEAB /* GPT_Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7F529EB930A00B3CEAB /* GPT_Prompts.swift */; };
+		4164B7FC29EBB54400B3CEAB /* envs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164B7FB29EBB54400B3CEAB /* envs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +41,9 @@
 		2981BF2E299258F800D40C7A /* MessageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageIndicatorView.swift; sourceTree = "<group>"; };
 		2981BF342992964000D40C7A /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
 		29CCEE1B29C4A16500452C0D /* OpenAI-chat-dalle-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OpenAI-chat-dalle-Info.plist"; sourceTree = "<group>"; };
-		4164B7F129EB8F0B00B3CEAB /* envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = envs.swift; sourceTree = "<group>"; };
 		4164B7F329EB923600B3CEAB /* GPT_responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_responses.swift; sourceTree = "<group>"; };
 		4164B7F529EB930A00B3CEAB /* GPT_Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_Prompts.swift; sourceTree = "<group>"; };
+		4164B7FB29EBB54400B3CEAB /* envs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = envs.swift; path = ../../../../../../../../../../Downloads/envs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,8 @@
 				2981BF252992581600D40C7A /* Views */,
 				2981BF11299256BB00D40C7A /* OpenAI_chat_dalleApp.swift */,
 				2981BF13299256BB00D40C7A /* ContentView.swift */,
+				4164B7FB29EBB54400B3CEAB /* envs.swift */,
 				2981BF15299256BE00D40C7A /* Assets.xcassets */,
-				4164B7F129EB8F0B00B3CEAB /* envs.swift */,
 				2981BF17299256BE00D40C7A /* Preview Content */,
 			);
 			path = "OpenAI chat-dalle";
@@ -224,7 +224,7 @@
 				29646507299F7E12005146FD /* Message.swift in Sources */,
 				2981BF14299256BB00D40C7A /* ContentView.swift in Sources */,
 				2981BF12299256BB00D40C7A /* OpenAI_chat_dalleApp.swift in Sources */,
-				4164B7F229EB8F0B00B3CEAB /* envs.swift in Sources */,
+				4164B7FC29EBB54400B3CEAB /* envs.swift in Sources */,
 				2917755029B6083800EEC302 /* GPT3View.swift in Sources */,
 				2981BF352992964000D40C7A /* DalleViewModel.swift in Sources */,
 				2981BF2B2992589300D40C7A /* DalleView.swift in Sources */,

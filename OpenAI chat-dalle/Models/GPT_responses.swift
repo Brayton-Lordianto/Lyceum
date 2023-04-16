@@ -17,6 +17,15 @@ struct QuizQuestion: Codable {
     var explanation: String? // made optional because versus does not use this.
 }
 
+// usage:
+/*
+ let quiz = Quiz(...)
+ quiz.questions[idx] is a QuizQuestion
+ ForEach(Quiz.questions, id: \.self) { quizQuestion in
+    Text(quizQuestion.A)
+ ...
+ }
+ */
 struct Quiz: Codable {
     var questions: [QuizQuestion]
 }

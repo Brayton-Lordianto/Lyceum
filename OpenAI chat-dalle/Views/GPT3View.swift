@@ -92,11 +92,21 @@ struct GPT3View: View {
             .navigationBarTitleDisplayMode(.inline)
             .onAppear {
                 Task {
+                    await gpt3ViewModel.getResponse(text: "hi there!")
+                }
+//                Task {
 //                    let syllabus = await gpt3ViewModel.getDetailedSyllabusAsString(on:"pokemon")
+//                    print("===============================SYLLABUS+==========")
+//                    print(syllabus)
+//
+//                    print("===============================Quiz Question From Syllabuss==========")
 //                    let quiz = await gpt3ViewModel.getCurriculumQuiz(on: syllabus)
 //                    print(quiz)
-//                    print(await gpt3ViewModel.getVersusQuiz(on: "Minecraft Blocks"))
-                }
+//
+//                    print("===============================Quiz Question From Syllabuss==========")
+//                    let quiz2 = await gpt3ViewModel.getVersusQuiz(on: "Minecraft Blocks")
+//                    print(quiz2)
+//                }
             }
             
         }

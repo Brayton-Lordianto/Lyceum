@@ -41,7 +41,6 @@ class GPT3ViewModel: ObservableObject {
     // syllabus
     func getDetailedSyllabusAsString(on topic: String) async -> String {
         let text = await getResponseSingle(prompt: syllabusPrompt(topic))
-        print(text)
         return text
     }
 
